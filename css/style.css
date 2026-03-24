@@ -308,3 +308,49 @@ a:hover {
   border-color: var(--primary-accent);
   box-shadow: 0 0 0 0.25rem rgba(76, 201, 211, 0.25);
 }
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Typography */
+  .hero-title { font-size: 2.2rem; margin-bottom: 15px; }
+  .hero-subtitle { font-size: 1.2rem; margin-bottom: 20px; }
+  .section-title { font-size: 1.8rem; margin-bottom: 30px; }
+  .footer-title { margin-top: 30px; margin-bottom: 15px; }
+  .christian-quote { font-size: 1.1rem; }
+  p, .lead, .text-muted { font-size: 0.95rem; }
+
+  /* Structural & Spacing */
+  .hero-section { padding: 60px 0; min-height: auto; text-align: center; }
+  .hero-section .d-flex { justify-content: center; }
+  .py-5 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+  
+  /* Cards */
+  .card-custom { padding: 1.25rem !important; }
+  .card-icon { font-size: 2rem; margin-bottom: 15px; }
+  
+  /* Sections */
+  .christian-section { padding: 50px 0; }
+  .footer-custom { padding: 40px 0 20px; text-align: center; }
+  .footer-custom .text-md-end { text-align: center !important; margin-top: 15px; }
+  
+  /* Images */
+  .profile-img-pro {
+    max-height: 300px;
+    box-shadow: -8px 8px 0px var(--primary-accent), 0 8px 20px rgba(0,0,0,0.2) !important;
+    margin-top: 30px;
+    border-width: 3px;
+  }
+  .profile-img-pro:hover {
+    transform: none;
+    box-shadow: -8px 8px 0px var(--primary-accent), 0 8px 20px rgba(0,0,0,0.2) !important;
+  }
+  img[style*="height: 350px"] { height: 250px !important; }
+  img[style*="height: 75px"] { height: 50px !important; }
+  img[style*="height: 85px"] { height: 60px !important; }
+}
+
+@media (max-width: 575px) {
+  .hero-title { font-size: 1.8rem; }
+  .section-title { font-size: 1.5rem; }
+  .profile-img-pro { max-height: 250px; }
+}
